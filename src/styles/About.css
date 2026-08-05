@@ -1,0 +1,187 @@
+.about{
+    padding:70px 8%;
+}
+
+.about-header{
+
+max-width:760px;
+
+margin:0 auto 60px;
+
+text-align:center;
+
+}
+
+.about-header span{
+    color:var(--primary);
+    font-weight:600;
+    letter-spacing:2px;
+    font-size:15px;
+}
+
+.about-header h2{
+
+margin:15px 0 25px;
+
+font-size:48px;
+
+}
+
+.about-header p{
+    color:var(--text-light);
+    line-height:1.8;
+    font-size:18px;
+}
+
+.about-description{
+
+max-width:900px;
+
+margin:auto;
+
+margin-bottom:70px;
+
+}
+
+.about-description p{
+    color:var(--text-light);
+    font-size:18px;
+    line-height:2;
+    text-align:center;
+    margin-bottom:25px;
+}
+
+.about-cards{
+
+    max-width:950px;
+
+    margin:45px auto 0;
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:24px;
+
+}
+
+.about-card{
+
+    background:var(--card);
+
+    border-radius:22px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:220px;
+
+}
+
+.about-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.about-card h3{
+
+    margin:15px 0 10px;
+
+    color:var(--text);
+
+    font-size:22px;
+
+}
+
+.about-card p{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    font-size:18px;
+
+}
+
+.about-card span{
+
+    color:var(--text-light);
+
+    margin-top:6px;
+
+}
+
+@media(max-width:992px){
+
+.about-cards{
+grid-template-columns:repeat(2,1fr);
+}
+
+}
+
+@media(max-width:768px){
+
+.about{
+padding:90px 6%;
+}
+
+.about-header h2{
+font-size:36px;
+}
+
+.about-description p{
+font-size:16px;
+}
+
+.about-cards{
+grid-template-columns:1fr;
+}
+
+}
+
+.about-icon{
+
+    width:60px;
+    height:60px;
+
+    margin:0 auto 20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:16px;
+
+    background:rgba(124,58,237,.10);
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    transition:.35s;
+
+}
+
+.about-card:hover .about-icon{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:rotate(-8deg) scale(1.08);
+
+}
