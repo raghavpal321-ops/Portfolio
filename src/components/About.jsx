@@ -83,32 +83,31 @@ function About() {
 
   <div className="about-card">
 
-    <div className="about-icon">
-      <FaBullseye />
+   <div className="about-icon">
+    <FaBullseye />
     </div>
 
-    <h3>Goal</h3>
+   <h3>Goal</h3>
 
-    <p>Building Impactful</p>
+   <p>Building Real-World</p>
 
-    <span>Digital Products</span>
+   <span>Solutions</span>
 
   </div>
 
   <div className="about-card">
 
-    <div className="about-icon">
-      <FaLaptopCode />
-    </div>
+  <div className="about-icon">
+    <FaLaptopCode />
+   </div>
 
-    <h3>Tech Stack</h3>
+   <h3>Tech Stack</h3>
 
-    <p>React • Node.js</p>
+   <p>MERN Stack • Python</p>
 
-    <span>Express • MongoDB</span>
+   <span>AI/ML • Computer Vision</span>
 
   </div>
-
 </div>
 
     </section>

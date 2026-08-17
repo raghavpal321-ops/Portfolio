@@ -19,12 +19,14 @@ const certifications = Object.entries(certificationFiles).map(
       .trim();
 
     if (title.toLowerCase().includes("walmart")) {
-      title = "Advanced Software Engineering Job Simulation";
+    title = "Advanced Software Engineering Job Simulation";
     } else if (title.toLowerCase().includes("cisco")) {
-      title = "Getting Started with Cisco Packet Tracer";
+    title = "Getting Started with Cisco Packet Tracer";
     } else if (title.toLowerCase().includes("microsoft")) {
-      title = "Microsoft Learn Achievement";
-    }
+    title = "Get started building with Power BI";
+    } else if (title.toLowerCase().includes("raghav pal 7160")) {
+    title = "YUVA AI For All";
+     }
 
     return {
       title,
