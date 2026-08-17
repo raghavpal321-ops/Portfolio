@@ -1,0 +1,171 @@
+/* =========================
+   Certifications Section
+========================= */
+
+.certifications {
+  padding: 100px 8%;
+}
+
+.section-label {
+  display: block;
+  text-align: center;
+  color: #7c3aed;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.certifications-subtitle {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+  color: #64748b;
+  line-height: 1.7;
+}
+
+/* =========================
+   Certifications Grid
+========================= */
+
+.certifications-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* =========================
+   Certification Card
+========================= */
+
+.certification-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  padding: 25px;
+
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 18px;
+
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+
+  transition: all 0.3s ease;
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(124, 58, 237, 0.15);
+}
+
+/* =========================
+   Icon
+========================= */
+
+.certification-icon {
+  min-width: 55px;
+  height: 55px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f3e8ff;
+  border-radius: 14px;
+
+  font-size: 27px;
+}
+
+/* =========================
+   Content
+========================= */
+
+.certification-content {
+  flex: 1;
+}
+
+.certification-content h3 {
+  margin: 0 0 8px;
+
+  color: #1e293b;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.certification-content p {
+  margin: 0 0 15px;
+
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* =========================
+   Button
+========================= */
+
+.certificate-btn {
+  display: inline-block;
+
+  padding: 9px 16px;
+
+  background: #7c3aed;
+  color: #ffffff;
+
+  text-decoration: none;
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+  background: #6d28d9;
+  transform: translateY(-2px);
+}
+
+/* =========================
+   Tablet
+========================= */
+
+@media (max-width: 768px) {
+
+  .certifications {
+    padding: 80px 6%;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+/* =========================
+   Mobile
+========================= */
+
+@media (max-width: 480px) {
+
+  .certifications {
+    padding: 70px 5%;
+  }
+
+  .certification-card {
+    padding: 20px;
+  }
+
+  .certification-icon {
+    min-width: 48px;
+    height: 48px;
+    font-size: 23px;
+  }
+
+  .certification-content h3 {
+    font-size: 16px;
+  }
+
+}

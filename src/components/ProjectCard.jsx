@@ -1,13 +1,12 @@
 import "../styles/ProjectCard.css";
-import taskImage from "../assets/images/task-manager.png";
 
 function ProjectCard({ project }) {
   return (
     <div className="project-card">
       <div className="project-image">
         <img
-          src={taskImage}
-          alt="Task Management System"
+            src={project.image}
+            alt={project.title}
         />
       </div>
 

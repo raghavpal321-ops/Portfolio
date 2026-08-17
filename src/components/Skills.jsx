@@ -7,12 +7,17 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaPython,
 } from "react-icons/fa";
 
 import {
   SiExpress,
   SiMongodb,
   SiPostman,
+  SiOpencv,
+  SiNumpy,
+  SiPandas,
+  SiScikitlearn,
 } from "react-icons/si";
 
 function Skills() {
@@ -26,6 +31,7 @@ function Skills() {
         { icon: <FaReact />, name: "React" },
       ],
     },
+
     {
       title: "Backend",
       skills: [
@@ -33,19 +39,33 @@ function Skills() {
         { icon: <SiExpress />, name: "Express.js" },
       ],
     },
+
     {
       title: "Database",
       skills: [
         { icon: <SiMongodb />, name: "MongoDB" },
       ],
     },
+
     {
-  title: "Tools",
-  skills: [
-    { icon: <FaGitAlt />, name: "Git" },
-    { icon: <SiPostman />, name: "Postman" },
-  ],
-},
+      title: "AI / ML",
+      skills: [
+        { icon: <FaPython />, name: "Python" },
+        { icon: <SiOpencv />, name: "OpenCV" },
+        { icon: <SiNumpy />, name: "NumPy" },
+        { icon: <SiPandas />, name: "Pandas" },
+        { icon: <SiScikitlearn />, name: "Scikit-learn" },
+        { name: "MediaPipe" },
+      ],
+    },
+
+    {
+      title: "Tools",
+      skills: [
+        { icon: <FaGitAlt />, name: "Git" },
+        { icon: <SiPostman />, name: "Postman" },
+      ],
+    },
   ];
 
   return (
@@ -54,9 +74,9 @@ function Skills() {
       <h2 className="section-title">My Skills</h2>
 
       <p className="skills-subtitle">
-        I build modern, responsive, and scalable web applications using
-        the latest technologies across frontend, backend, databases, and
-        development tools.
+        I build modern, responsive, and scalable applications using
+        technologies across frontend, backend, databases, AI/ML,
+        and development tools.
       </p>
 
       <div className="skills-grid">
@@ -74,7 +94,7 @@ function Skills() {
                 <div className="skill-item" key={i}>
 
                   <div className="skill-icon">
-                    {skill.icon}
+                    {skill.icon || "◈"}
                   </div>
 
                   <span>{skill.name}</span>

@@ -14,12 +14,10 @@ function Hero() {
 
           <h1>Raghav Pal</h1>
 
-          <h2>Full Stack Developer</h2>
+          <h2>MERN Stack Developer</h2>
 
           <p>
-            I build responsive web applications using React, Node.js,
-            Express, and MongoDB. I enjoy learning new technologies
-            and solving real-world problems through code.
+                  I build modern web applications using the MERN stack and AI/ML solutions using Python and computer vision, turning real-world problems into practical and user-friendly solutions.
           </p>
 
           <div className="hero-buttons">
@@ -33,7 +31,7 @@ function Hero() {
             <div className="hero-stats">
 
     <div>
-        <h3>5+</h3>
+        <h3>3+</h3>
         <p>Projects</p>
     </div>
 
